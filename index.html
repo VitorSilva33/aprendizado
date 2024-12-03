@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="container">
+      <!-- canto esquerdo -->
+      <div class="canto-esquerdo">
+        <div class="container-canto-esquerdo">
+          <h1 class="titulo-canto-esquerdo">Nome do meu e-commerce</h1>
+        </div>
+        <img
+          class="logo-canto-esquerdo-signup"
+          src="./imagem-e-commerce.png"
+          alt="logo-cadastre-se"
+        />
+      </div>
+      <!-- canto direito  -->
+      <div class="canto-direito">
+        <form class="formulario-cadastro">
+          <h1 class="titulo-formulario-cadastro">Sign up</h1>
+          <div class="formulario-cadastro-items">
+            <div class="input-cadastro">
+              <label class="label-input-padrao" for="seunome"> Seu nome </label>
+              <input id="seunome" type="text" />
+            </div>
+            <div class="input-cadastro">
+              <label class="label-input-padrao" for="nickname">
+                Nickname
+              </label>
+              <input id="nickname" type="text" />
+            </div>
+            <div class="input-cadastro">
+              <label class="label-input-padrao" for="email"> Email </label>
+              <input id="email" type="email" />
+            </div>
+            <div class="input-cadastro">
+              <label class="label-input-padrao" for="senha"> Senha </label>
+              <input id="senha" type="password" />
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <input style="height: 16px; width: 16px" type="checkbox" />
+              <p>Aceito todos os termos de uso da aplicação!</p>
+            </div>
+            <button class="button-inscrever">Inscreva-se</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+﻿body {
+  /* padding espaçamento interno */
+  padding: 0;
+  /* padding espaçamento externo  */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: 0;
+}
+
+.container {
+  /* Ele é capaz de posicionar tudo em qual quer lugar da tela. */
+  display: flex;
+  /* Ele atua no eixo y  */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.canto-esquerdo {
+  /* largura */
+  width: 50%;
+  /* altura */
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-canto-esquerdo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  position: absolute;
+  top: 32px;
+}
+.titulo-canto-esquerdo {
+  font-size: 32px;
+  text-align: center;
+}
+
+.logo-canto-esquerdo-signup {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.canto-direito {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario-cadastro {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 24px;
+}
+
+.formulario-cadastro-items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-cadastro {
+  display: flex;
+  align-items: end;
+  border-bottom: 1px solid #e8ecef;
+  height: 40px;
+  position: relative;
+}
+
+.titulo-formulario-cadastro {
+  margin-bottom: 24px;
+}
+
+.label-input-padrao {
+  /* ela ignora qual quer contanto com outras propriedades,
+  e se torna absoluta com base no pai */
+  position: absolute;
+  /* posiciona a tag html com base no pai lembrando que se o pai não estiver relativo ele considera o pai o proprio body */
+  top: 0;
+}
+
+.button-inscrever {
+  background-color: #141718;
+  color: white;
+  padding: 10px 200px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all;
+}
+
+.button-inscrever:hover {
+  background-color: #333839;
+}
